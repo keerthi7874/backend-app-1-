@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h2>User Edit Form</h2>
-    <form action="/users/<%= user._id %>/save" method="POST">
-        <p><input type="text" name="name" value="<%= user.name %>"></p>
-        <p><input type="text" name="email" value="<%= user.email %>"></p>
-        <p><input type="text" name="role"  value="<%= user.role %>"></p>
-        <p><button>Save</button></p>
+  </head>
+  <body>
+    <h2>Add User Form</h2>
+    <form action="/users/add" method="POST">
+      <p><input type="text" name="name" placeholder="Name" /></p>
+      <p><input type="text" name="email" placeholder="Email" /></p>
+      <p><input type="password" name="password" placeholder="Password" /></p>
+      <p><input type="text" name="role" placeholder="Role" /></p>
+      <p><button>Submit</button></p>
     </form>
-</body>
+  </body>
 </html>
